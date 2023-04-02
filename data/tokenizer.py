@@ -54,3 +54,12 @@ def clean_token(token):
 def tokenize(corpus):
     for doc, context in model.pipe(corpus, disable=NLP_DISABLE):
         yield " ".join([clean_token(token) for token in doc if clean_token(token)])
+
+
+with open(
+    "/media/simon/Samsung_T5/CEDAR/data2/word2vec_data/processed/fr_news_crawl/news.2007.fr.shuffled.deduped.processed.nc",
+    "r",
+) as file:
+    lines = [line for line in file]
+    tokens = tokenize(lines)
+    print(tokens)
