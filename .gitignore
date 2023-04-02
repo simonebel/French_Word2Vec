@@ -1,3 +1,5 @@
 ./flaubert_dataset/tools/mosesdecoder
 ./flaubert_dataset/tools/wikiextractor
 .env
+__pycache__
+.vscode

@@ -1,1 +1,9 @@
-datasets: ["fr_news_crawl"]
+datasets:
+  [
+    "fr_common_crawl",
+    "fr_europarl",
+    "fr_gutenberg",
+    "fr_news_commentary",
+    "fr_news_crawl",
+    "fr_wiki",
+  ]
